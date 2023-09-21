@@ -1,0 +1,68 @@
+.section-text{
+    font-size: 18px;
+    color: $accent-color;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-align: center;
+    @include mq('tab') {
+      font-size: 16px;
+    }
+    @include mq('sp') {
+      font-size: 14px;
+      letter-spacing: 0.7px;
+    }
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    text-align: center;
+    position: relative;
+    &:after {
+        background: $accent-color;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @include mq('tab') {
+      font-size: 36px;
+    }
+    @include mq('sp') {
+      font-size: 32px;
+      letter-spacing: 1.6px;
+    }
+}
+.section-title-white{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    &:after {
+        background: #fff;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @include mq('tab') {
+      font-size: 36px;
+    }
+    @include mq('sp') {
+      font-size: 32px;
+      letter-spacing: 1.6px;
+    }
+}
+.green-font{
+    color: #159741;
+}
+.full-img {
+}
